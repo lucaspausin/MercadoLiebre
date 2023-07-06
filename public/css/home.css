@@ -1,0 +1,76 @@
+body header {
+	background-color: var(--Amarillo);
+	padding: 12px 0px 12px 0px;
+}
+
+body header img {
+	width: 40%;
+	padding: 10px 0px 10px 25px;
+}
+
+body header div {
+	padding: 0px 20px 0px 20px;
+}
+
+body header div button {
+	display: block;
+	padding: 0;
+}
+
+body header div p {
+	padding: 0px 25px 0px 25px;
+}
+
+body header div img,
+body header nav ul img {
+	width: 9.5%;
+	float: right;
+}
+
+body header nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+body header nav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.burger-menu {
+	text-align: center;
+	color: white;
+	padding: 8px;
+	border-radius: 20%;
+	background-color: blue;
+	margin: 10px 45%;
+}
+
+main {
+	background-color: var(--Grisclaro);
+}
+main section img {
+	width: 100%;
+}
+main section div img {
+	width: 45%;
+}
+
+footer {
+	padding: 20px;
+
+	color: var(--Grisoscuro);
+}
+footer div {
+	text-align: center;
+}
+footer div h3 {
+	margin: 10px 0px 0px 0px;
+}
+footer div p {
+	margin: 0px 0px 45px 0px;
+}
+footer div i {
+	color: var(--Celeste);
+	font-size: 27px;
+}
