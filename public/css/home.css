@@ -42,7 +42,7 @@ body header nav ul li a {
 	color: white;
 	padding: 8px;
 	border-radius: 20%;
-	background-color: blue;
+	background-color: var(--Celeste);
 	margin: 10px 45%;
 }
 
@@ -72,5 +72,5 @@ footer div p {
 }
 footer div i {
 	color: var(--Celeste);
-	font-size: 27px;
+	font-size: 2em;
 }
