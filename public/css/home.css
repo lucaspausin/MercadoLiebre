@@ -1,38 +1,46 @@
-body header {
+header {
 	background-color: var(--Amarillo);
 	padding: 12px 0px 12px 0px;
 }
 
-body header img {
+header img {
 	width: 40%;
 	padding: 10px 0px 10px 25px;
 }
 
-body header div {
+header div {
 	padding: 0px 20px 0px 20px;
 }
 
-body header div button {
+header div button {
 	display: block;
 	padding: 0;
 }
 
-body header div p {
-	padding: 0px 25px 0px 25px;
+header div p {
+	text-align: center;
 }
 
-body header div img,
-body header nav ul img {
+header div img,
+header nav ul img {
 	width: 9.5%;
 	float: right;
 }
 
-body header nav ul {
+header div button {
+	display: inline-block;
+}
+
+header nav {
+	display: none;
+}
+
+header nav ul {
 	list-style-type: none;
 	padding: 0;
 }
 
-body header nav ul li a {
+header nav ul li a {
 	text-decoration: none;
 	color: black;
 }
@@ -46,19 +54,32 @@ body header nav ul li a {
 	margin: 10px 45%;
 }
 
-main {
-	background-color: var(--Grisclaro);
+main section {
+	width: 90%;
+	margin: 0 auto;
 }
-main section img {
+
+main section article {
+	background-color: white;
+	line-height: 25px;
+	margin-top: 10px;
+}
+
+section > article > div {
+	border-top: 1px solid #ebebeb;
+	padding-left: 15px;
+}
+main img {
 	width: 100%;
 }
-main section div img {
-	width: 45%;
+main section article img {
+	width: 75%;
 }
 
 footer {
+	margin-top: 10px;
 	padding: 20px;
-
+	background-color: white;
 	color: var(--Grisoscuro);
 }
 footer div {
@@ -73,4 +94,20 @@ footer div p {
 footer div i {
 	color: var(--Celeste);
 	font-size: 2em;
+}
+
+@media (min-width: 361px) {
+	header nav {
+		display: block;
+	}
+
+	.burger-menu {
+		display: none;
+	}
+	main section article {
+		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	}
+}
+
+@media (min-width: 769px) {
 }
