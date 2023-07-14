@@ -1,15 +1,15 @@
 header {
 	background-color: var(--Amarillo);
-	padding: 12px 0px 12px 0px;
+	padding: 12px 0;
 }
 
 header img {
 	width: 40%;
-	padding: 10px 0px 10px 25px;
+	padding: 10px 0 10px 25px;
 }
 
 header div {
-	padding: 0px 20px 0px 20px;
+	padding: 0 20px;
 }
 
 header div button {
@@ -59,19 +59,52 @@ main section {
 	margin: 0 auto;
 }
 
+main section h2 {
+	padding: 12px 0 12px 0;
+}
+
 main section article {
 	background-color: white;
-	line-height: 25px;
+	line-height: 15px;
 	margin-top: 10px;
 }
 
-section > article > div {
+main section article div {
 	border-top: 1px solid #ebebeb;
 	padding-left: 15px;
 }
+
+main section article div ul {
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+}
+
+main section article div ul li span {
+	color: #4cbb17;
+}
+
+main section article div p {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	color: gray;
+}
+
+main section article div i {
+	width: auto;
+	border: 1px solid #4cbb17;
+	padding-left: 2px;
+	padding-right: 8px;
+	padding-bottom: 12px;
+	border-radius: 100%;
+	font-size: 10px;
+	color: #4cbb17;
+}
+
 main img {
 	width: 100%;
 }
+
 main section article img {
 	width: 75%;
 }
@@ -82,15 +115,19 @@ footer {
 	background-color: white;
 	color: var(--Grisoscuro);
 }
+
 footer div {
 	text-align: center;
 }
+
 footer div h3 {
-	margin: 10px 0px 0px 0px;
+	margin: 10px 0 0;
 }
+
 footer div p {
-	margin: 0px 0px 45px 0px;
+	margin: 0 0 45px;
 }
+
 footer div i {
 	color: var(--Celeste);
 	font-size: 2em;
@@ -104,8 +141,9 @@ footer div i {
 	.burger-menu {
 		display: none;
 	}
+
 	main section article {
-		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+		box-shadow: 0 0 10px rgb(100, 100, 100);
 	}
 }
 
