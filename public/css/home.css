@@ -36,6 +36,7 @@ header {
 }
 
 .search > button {
+	color: black;
 	display: block;
 	padding: 0;
 	position: absolute;
@@ -94,9 +95,19 @@ main section article {
 	margin-top: 10px;
 	flex-basis: 100%;
 	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main section article > img {
 }
 
 main section article div {
+	width: 100%;
+	gap: 15px;
+	display: flex;
+	flex-direction: column;
 	border-top: 1px solid #ebebeb;
 	padding-left: 15px;
 	position: relative;
@@ -105,6 +116,7 @@ main section article div {
 
 main section article div ul {
 	display: flex;
+	gap: 5px;
 	list-style: none;
 	padding: 0;
 }
@@ -114,8 +126,6 @@ main section article div ul li span {
 }
 
 main section article div p {
-	padding-top: 15px;
-	padding-bottom: 10px;
 	color: gray;
 }
 
