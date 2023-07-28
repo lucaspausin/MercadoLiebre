@@ -207,10 +207,6 @@ footer div i {
 }
 
 @media (min-width: 769px) {
-	.header-middle > img {
-		width: 32%;
-	}
-
 	main section article {
 		flex-basis: 20%;
 		box-shadow: 0 0 10px rgb(100, 100, 100);
