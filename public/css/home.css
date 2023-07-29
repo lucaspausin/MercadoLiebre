@@ -82,6 +82,7 @@ main section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: start;
 }
 
 main h2 {
@@ -89,7 +90,7 @@ main h2 {
 	text-align: center;
 }
 
-main section article {
+.articleStore {
 	background-color: white;
 	line-height: 15px;
 	margin-top: 10px;
@@ -98,9 +99,29 @@ main section article {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	transition: all 0.25s ease-out;
+	height: auto;
 }
 
-main section article div {
+.articleInformation > p {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	color: gray;
+	transition: all 0.2s ease-out;
+}
+
+.articleStore:hover > .articleInformation > p {
+	opacity: 1;
+	max-height: 25px;
+	padding: 5px;
+}
+
+.articleStore:hover {
+	box-shadow: 0 0 10px rgba(100, 100, 100, 0.5);
+}
+
+.articleInformation {
 	width: 100%;
 	gap: 15px;
 	display: flex;
@@ -111,22 +132,18 @@ main section article div {
 	padding: 10px;
 }
 
-main section article div ul {
+.articleInformation > ul {
 	display: flex;
 	gap: 5px;
 	list-style: none;
 	padding: 0;
 }
 
-main section article div ul li span {
+.articleInformation > ul > li > span {
 	color: #4cbb17;
 }
 
-main section article div p {
-	color: gray;
-}
-
-main section article div i {
+.articleInformation > i {
 	font-size: 16px;
 	padding: 5px;
 	width: 30px;
@@ -138,36 +155,44 @@ main section article div i {
 	position: absolute;
 	right: 20px;
 	top: -15px;
+	transition: all 0.15s ease-out;
+}
+
+.articleStore:hover > .articleInformation > i {
+	transform: rotate(-90deg);
 }
 
 main img {
 	width: 100%;
 }
 
-main section article img {
+.articleStore > img {
 	width: 75%;
 }
 
-footer {
+.footerContent {
+	display: flex;
+	flex-direction: column;
 	margin-top: 10px;
+
 	padding: 20px;
 	background-color: white;
 	color: var(--Grisoscuro);
 }
 
-footer div {
+.cardStore {
 	text-align: center;
 }
 
-footer div h3 {
+.cardStore > h3 {
 	margin: 10px 0 0;
 }
 
-footer div p {
+.cardStore > p {
 	margin: 0 0 45px;
 }
 
-footer div i {
+.cardStore > i {
 	color: var(--Celeste);
 	font-size: 2em;
 }
@@ -200,15 +225,17 @@ footer div i {
 		display: none;
 	}
 
-	main section article {
+	.articleStore {
+		display: flex;
 		flex-basis: 40%;
-		box-shadow: 0 0 10px rgb(100, 100, 100);
 	}
 }
 
 @media (min-width: 769px) {
-	main section article {
+	.articleStore {
 		flex-basis: 20%;
-		box-shadow: 0 0 10px rgb(100, 100, 100);
+	}
+	.footerCards {
+		display: flex;
 	}
 }

@@ -31,8 +31,13 @@
 .loginRegister > button {
 	padding: 0.85rem;
 	border: none;
-	background-color: blue;
+	background-color: var(--Celeste);
 	color: white;
 	font-weight: 700;
 	border-radius: 3.5px;
+	transition: all 0.25s ease-out;
+}
+
+.loginRegister > button:hover {
+	background-color: #0022aa;
 }

@@ -15,6 +15,10 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
 	font-family: "Roboto";
 	padding: 0;
 	background-color: var(--Grisclaro);
